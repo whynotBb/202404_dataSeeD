@@ -4,6 +4,425 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DataSeeD</title>
+        <link rel="stylesheet" href="./resource/css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <div class="bodyWrap">
+            <header>
+                <h1>Logo</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./realTime.html">Dash Board</a>
+                        </li>
+                        <li class="on">
+                            <a href="./setting.html">Device Setting</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="chartSection">
+                <!-- 구분을 위해 백그라운드 컬러를 지정하였습니다. 실제 차트 적용시에는 제거해주세요 -->
+                <div class="chart" style="background: rgba(0, 0, 0, 0.3)">
+                    chart area
+                </div>
+                <div class="chart" style="background: rgba(0, 0, 0, 0.3)">
+                    chart area
+                </div>
+            </section>
+            <section class="tableSection">
+                <div class="tableWrap">
+                    <div class="inner">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Select</th>
+                                    <th>Index</th>
+                                    <th>Color</th>
+                                    <th>LoggerIP</th>
+                                    <th>Name</th>
+                                    <th>type</th>
+                                    <th>Unit</th>
+                                    <th>X.Div(ms)</th>
+                                    <th>X.Delay(ms)</th>
+                                    <th>X.Shift(ms)</th>
+                                    <th>Y.Div(mV)</th>
+                                    <th>Y.Center</th>
+                                    <th>Y.Trigger</th>
+                                    <th>Low</th>
+                                    <th>High</th>
+                                    <th>MinScale</th>
+                                    <th>FullScale</th>
+                                    <th>xCal.</th>
+                                    <th>LowAlarm</th>
+                                    <th>HighAlarm</th>
+                                    <th>Trigger</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01" />
+                                            <label for="chk01"></label>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><div class="colorCard"></div></td>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            value="192.168.3.2"
+                                        />
+                                    </td>
+                                    <td><input type="text" value="Ch1" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>Wave</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="V" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>2048</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="1000" /></td>
+                                    <td><input type="text" value="128" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="5" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="500" /></td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01" />
+                                            <label for="chk01"></label>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><div class="colorCard"></div></td>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            value="192.168.3.2"
+                                        />
+                                    </td>
+                                    <td><input type="text" value="Ch1" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>Wave</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="V" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>2048</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="1000" /></td>
+                                    <td><input type="text" value="128" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="5" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="500" /></td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01" />
+                                            <label for="chk01"></label>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><div class="colorCard"></div></td>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            value="192.168.3.2"
+                                        />
+                                    </td>
+                                    <td><input type="text" value="Ch1" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>Wave</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="V" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>2048</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="1000" /></td>
+                                    <td><input type="text" value="128" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="5" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="500" /></td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01" />
+                                            <label for="chk01"></label>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><div class="colorCard"></div></td>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            value="192.168.3.2"
+                                        />
+                                    </td>
+                                    <td><input type="text" value="Ch1" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>Wave</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="V" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>2048</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="1000" /></td>
+                                    <td><input type="text" value="128" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="5" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="500" /></td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01" />
+                                            <label for="chk01"></label>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><div class="colorCard"></div></td>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            value="192.168.3.2"
+                                        />
+                                    </td>
+                                    <td><input type="text" value="Ch1" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>Wave</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="V" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>2048</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="1000" /></td>
+                                    <td><input type="text" value="128" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="5" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="500" /></td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01" />
+                                            <label for="chk01"></label>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><div class="colorCard"></div></td>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            value="192.168.3.2"
+                                        />
+                                    </td>
+                                    <td><input type="text" value="Ch1" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>Wave</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="V" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>2048</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="1000" /></td>
+                                    <td><input type="text" value="128" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="5" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="500" /></td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk01" />
+                                            <label for="chk01"></label>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><div class="colorCard"></div></td>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            value="192.168.3.2"
+                                        />
+                                    </td>
+                                    <td><input type="text" value="Ch1" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>Wave</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="V" /></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <p>2048</p>
+                                            <ul>
+                                                <li>option01</li>
+                                                <li>option02</li>
+                                                <li>option03</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="1000" /></td>
+                                    <td><input type="text" value="128" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="5" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="500" /></td>
+                                    <td><input type="text" value="1" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                    <td><input type="text" value="O" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="./resource/js/ui.js"></script>
+    </body>
 </html>
