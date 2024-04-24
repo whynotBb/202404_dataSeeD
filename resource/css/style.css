@@ -175,6 +175,7 @@ body {
   font-size: 1.6rem;
 }
 body .bodyWrap {
+  position: relative;
   max-width: 192rem;
   min-height: 100vh;
   background: #f4f7fe;
@@ -222,7 +223,7 @@ header nav ul li:nth-child(1)::after {
 }
 
 section {
-  padding: 0 10.7rem;
+  padding: 0 4rem;
 }
 
 .chartSection {
@@ -234,9 +235,24 @@ section {
   width: 100%;
   height: 26.2rem;
 }
+.chartSection.settingSt {
+  padding-top: 2rem;
+}
 
 .tableSection {
-  padding: 1.6rem 10.7rem;
+  padding: 1.6rem 4rem;
+}
+.tableSection .tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+.tableSection .tableHeader h3 {
+  font-size: 2.4rem;
+  color: #2b3674;
+  font-weight: 700;
+  line-height: 3.2rem;
 }
 .tableSection .tableWrap {
   width: 100%;
@@ -282,6 +298,20 @@ section {
 .tableSection table .dropdown {
   width: 100%;
 }
+.tableSection.dashSt table td:nth-child(1), .tableSection.dashSt table td:nth-child(2) {
+  text-align: center;
+}
+.tableSection.settingSt .inner {
+  height: 45rem;
+}
+.tableSection.settingSt .tableWrap {
+  height: 55rem;
+}
+.tableSection.settingSt .tableWrap th {
+  color: #2b3674;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 
 .checkbox input[type=checkbox] {
   display: none;
@@ -304,6 +334,21 @@ input[type=text] {
   outline: none;
   height: 2.7rem;
   padding: 0 1rem;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: #3965ff;
+  border-radius: 1rem;
+  min-width: 8.8rem;
+  color: #fff;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .dropdown {
@@ -377,4 +422,35 @@ input[type=text] {
   height: 2.7rem;
   display: inline-block;
   vertical-align: middle;
+}
+
+.settingSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7rem;
+  position: absolute;
+  top: 7rem;
+  width: 100%;
+}
+.settingSection .settingIp {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.settingSection .settingIp p {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2b3674;
+}
+.settingSection .settingIp input {
+  font-size: 2.4rem;
+  font-weight: 400;
+  background: transparent;
+  width: 17rem;
+}
+.settingSection .btnWrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
